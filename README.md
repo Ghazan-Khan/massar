@@ -11,6 +11,8 @@ A production-ready, dependency-free bilingual website for **massarservices.ma**,
 
 Requirements: Windows PowerShell 5.1 (included with Windows 10/11) and nothing else.
 
+An optional `package.json` aliases the same commands as `npm run build`, `npm run check` and `npm run serve`. It declares no dependencies; npm is not required and nothing is installed from the registry.
+
 ```powershell
 # Generate the site into dist\
 powershell -NoProfile -ExecutionPolicy Bypass -File scripts\build.ps1
