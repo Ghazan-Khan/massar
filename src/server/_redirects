@@ -1,0 +1,24 @@
+/about-us/            /من-نحن/              301
+/contact-us/          /اتصل-بنا/            301
+/faq/                 /الأسئلة-الشائعة/     301
+/privacy-policy/      /سياسة-الخصوصية/      301
+/terms/               /شروط-الاستخدام/      301
+/disclaimer/          /إخلاء-المسؤولية/     301
+/reset-massar-password/ /استرجاع-كلمة-المرور/ 301
+/exam-results/        /نتائج-مسار/          301
+/نتائج-الامتحانات/    /نتائج-مسار/          301
+/مسار-2026/           /التقويم-المدرسي/     301
+/massar-problems/     /مشاكل-مسار/          301
+/guides/              /شروحات/              301
+/en/exam-results/     /en/massar-results/   301
+/en/الأسئلة-الشائعة/  /en/faq/              301
+/sitemap_index.xml    /sitemap.xml          301
+/wp-sitemap.xml       /sitemap.xml          301
+/feed/                /أخبار-التعليم/        301
+/en/feed/             /en/education-news/   301
+
+/storage/*            /404.html             404
+/lib/*                /404.html             404
+/setup-db.php         /404.html             404
+
+/*  /404.html  404

@@ -1,0 +1,31 @@
+# OS and editor noise
+Thumbs.db
+desktop.ini
+.DS_Store
+.vscode/
+.idea/
+
+# Local build/preview output that should not be committed
+*.log
+
+# Generated release archives (staging artifacts, not source)
+release/*.zip
+release/*.sha256
+
+# Local environment files and per-server configuration
+.env
+.env.*
+src/server/config.local.php
+dist/config.local.php
+
+# Contact database and per-install secret (created on the server, never committed)
+*.sqlite
+*.sqlite3
+*.db
+*.db3
+*.sqlite-journal
+*.sqlite-wal
+*.sqlite-shm
+secret.key
+src/server/storage/secret.key
+dist/storage/secret.key

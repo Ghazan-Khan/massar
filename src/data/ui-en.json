@@ -1,0 +1,258 @@
+{
+  "htmlLang": "en",
+  "dir": "ltr",
+  "locale": "en",
+  "otherLang": "ar",
+  "otherDir": "rtl",
+  "otherHreflang": "ar-MA",
+  "siteName": "Massar Services",
+  "siteNameAlt": "مسار خدمات",
+  "siteNameLatin": "مسار خدمات",
+  "tagline": "Independent guide to Morocco's Massar services",
+  "ogAlt": "Massar Services: an independent guide to Morocco's Massar education services",
+  "orgDescription": "An independent information website explaining Morocco's Massar education services, with practical guides for students, parents, guardians and educators.",
+  "skip": "Skip to main content",
+  "menu": "Menu",
+  "search": "Search",
+  "searchShort": "Search…",
+  "searchPlaceholder": "Search guides and topics…",
+  "searchSlug": "/en/search/",
+  "guidesSlug": "/en/guides/",
+  "navLabel": "Main navigation",
+  "language": "العربية",
+  "languageLabel": "View this website in Arabic",
+  "home": "Home",
+  "homeSlug": "/en/",
+  "breadcrumbLabel": "Breadcrumb",
+  "updated": "Last updated:",
+  "published": "Published",
+  "readingTime": "min read",
+  "editorialTeam": "Massar Services editorial team",
+  "editorialSlug": "/en/editorial-policy/",
+  "editorialPolicyLabel": "editorial policy",
+  "contactSlug": "/en/contact-us/",
+  "faqSlug": "/en/faq/",
+  "readMore": "Read more",
+  "related": "Related guides",
+  "relatedEyebrow": "Keep exploring",
+  "sources": "Sources and references",
+  "sourcesLead": "Official or authoritative links you can use to verify the information on this page.",
+  "sourcesNote": "Official links were checked at the last review. Authorities may update their content or URLs without notice.",
+  "onThisPage": "On this page",
+  "faqEyebrow": "Quick answers",
+  "faqTitle": "Frequently asked questions",
+  "faqLead": "Short answers to common questions. Open a question to read the answer.",
+  "allFaq": "Browse all frequently asked questions",
+  "articleFooter": "This content is independently produced and editorially reviewed. Read our",
+  "helpCard": {
+    "title": "Need something clarified?",
+    "text": "Tell us if a page is unclear or a link is broken. Never send your password or account credentials.",
+    "link": "Contact the editorial team"
+  },
+  "sidebarOfficial": {
+    "title": "Source reminder",
+    "text": "We are an independent information website. Always use the official platform for account actions and results.",
+    "href": "https://www.men.gov.ma/",
+    "link": "Visit the Ministry website"
+  },
+  "sitemapGroups": {
+    "start": "Start here",
+    "services": "Massar services",
+    "results": "Grades and results",
+    "help": "Help and troubleshooting",
+    "learn": "Guides and learning",
+    "news": "Education news",
+    "about": "About this site",
+    "legal": "Legal and policies"
+  },
+  "xmlSitemap": "XML sitemap",
+  "months": ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"],
+  "callouts": {
+    "note": "Note",
+    "tip": "Practical tip",
+    "warning": "Important",
+    "security": "Security warning",
+    "official": "Official source"
+  },
+  "nav": [
+    {
+      "label": "Massar services",
+      "href": "/en/massar-service/",
+      "children": [
+        { "label": "Massar overview", "href": "/en/massar-service/" },
+        { "label": "Massar Moutamadris", "href": "/en/massar-moutamadris/" },
+        { "label": "Massar Waliye", "href": "/en/massar-waliye/" },
+        { "label": "Massar Moudaris", "href": "/en/massar-moudaris/" },
+        { "label": "Massar Code", "href": "/en/massar-code/" }
+      ]
+    },
+    {
+      "label": "Grades & results",
+      "href": "/en/massar-grades/",
+      "children": [
+        { "label": "Massar grades", "href": "/en/massar-grades/" },
+        { "label": "Massar results", "href": "/en/massar-results/" },
+        { "label": "Baccalaureate results", "href": "/en/bac-results/" }
+      ]
+    },
+    {
+      "label": "Help",
+      "href": "/en/massar-problems/",
+      "children": [
+        { "label": "Massar login", "href": "/en/massar-login/" },
+        { "label": "Password recovery", "href": "/en/reset-massar-password/" },
+        { "label": "Common problems", "href": "/en/massar-problems/" }
+      ]
+    },
+    {
+      "label": "Guides",
+      "href": "/en/guides/",
+      "children": [
+        { "label": "All guides", "href": "/en/guides/" },
+        { "label": "Academic orientation", "href": "/en/orientation/" },
+        { "label": "Morocco's education system", "href": "/en/education-system/" },
+        { "label": "School calendar", "href": "/en/school-calendar/" },
+        { "label": "Official platforms", "href": "/en/official-platforms/" },
+        { "label": "Student resources", "href": "/en/student-resources/" }
+      ]
+    },
+    { "label": "Education news", "href": "/en/education-news/" },
+    {
+      "label": "About",
+      "href": "/en/about-us/",
+      "children": [
+        { "label": "About us", "href": "/en/about-us/" },
+        { "label": "Contact us", "href": "/en/contact-us/" },
+        { "label": "FAQ", "href": "/en/faq/" },
+        { "label": "Editorial policy", "href": "/en/editorial-policy/" }
+      ]
+    }
+  ],
+  "footer": {
+    "description": "Clear English-language explanations of Massar Moutamadris, Massar Waliye, grades, results, login, Massar Code and common access problems.",
+    "independence": "Independent website. Not affiliated with or endorsed by Morocco's Ministry of National Education.",
+    "copyright": "Massar Services. All rights reserved.",
+    "columns": [
+      {
+        "title": "Massar services",
+        "links": [
+          { "label": "Massar overview", "href": "/en/massar-service/" },
+          { "label": "Massar Moutamadris", "href": "/en/massar-moutamadris/" },
+          { "label": "Massar Waliye", "href": "/en/massar-waliye/" },
+          { "label": "Massar Moudaris", "href": "/en/massar-moudaris/" },
+          { "label": "Massar Code", "href": "/en/massar-code/" }
+        ]
+      },
+      {
+        "title": "Grades & results",
+        "links": [
+          { "label": "Massar grades", "href": "/en/massar-grades/" },
+          { "label": "Massar results", "href": "/en/massar-results/" },
+          { "label": "Baccalaureate results", "href": "/en/bac-results/" }
+        ]
+      },
+      {
+        "title": "Help",
+        "links": [
+          { "label": "Massar login", "href": "/en/massar-login/" },
+          { "label": "Password recovery", "href": "/en/reset-massar-password/" },
+          { "label": "Common problems", "href": "/en/massar-problems/" },
+          { "label": "FAQ", "href": "/en/faq/" },
+          { "label": "Contact us", "href": "/en/contact-us/" }
+        ]
+      },
+      {
+        "title": "Guides & learning",
+        "links": [
+          { "label": "All guides", "href": "/en/guides/" },
+          { "label": "Academic orientation", "href": "/en/orientation/" },
+          { "label": "Education system", "href": "/en/education-system/" },
+          { "label": "School calendar", "href": "/en/school-calendar/" },
+          { "label": "Official platforms", "href": "/en/official-platforms/" },
+          { "label": "Student resources", "href": "/en/student-resources/" }
+        ]
+      }
+    ],
+    "official": {
+      "title": "Looking for the official service?",
+      "text": "Account actions and official results are handled on Ministry of National Education platforms. Only enter credentials at the official address.",
+      "links": [
+        { "label": "Official Moutamadris", "href": "https://massarservice.men.gov.ma/moutamadris/Account" },
+        { "label": "Official Waliye", "href": "https://massarservice.men.gov.ma/waliye/Account" },
+        { "label": "Ministry website", "href": "https://www.men.gov.ma/" }
+      ]
+    },
+    "legal": [
+      { "label": "Privacy policy", "href": "/en/privacy-policy/" },
+      { "label": "Terms of use", "href": "/en/terms/" },
+      { "label": "Disclaimer", "href": "/en/disclaimer/" },
+      { "label": "Editorial policy", "href": "/en/editorial-policy/" },
+      { "label": "Corrections policy", "href": "/en/corrections-policy/" },
+      { "label": "Accessibility", "href": "/en/accessibility/" },
+      { "label": "Sitemap", "href": "/en/sitemap/" }
+    ],
+    "langHref": "/"
+  },
+  "contact": {
+    "formTitle": "Send a message to the editorial team",
+    "formLead": "Use this form to report outdated information, a broken link, or suggest a topic. Never send your password or account credentials.",
+    "name": "Name",
+    "namePlaceholder": "Your name",
+    "email": "Email address",
+    "emailPlaceholder": "name@example.com",
+    "topic": "Message topic",
+    "topicPlaceholder": "Choose a topic",
+    "topics": ["Report a correction", "Report a broken link", "Report outdated information", "Suggest a topic", "Question about this website", "Other"],
+    "page": "Relevant page or URL",
+    "pagePlaceholder": "Example: /en/massar-grades/",
+    "message": "Message",
+    "messagePlaceholder": "Explain what needs review or clarification, with any useful details.",
+    "consent": "I agree to my details being processed in accordance with the privacy policy, and I understand this is an independent website, not an official authority.",
+    "privacyLink": "Read the privacy policy",
+    "submit": "Send message",
+    "sending": "Sending…",
+    "success": "Thank you. Your message has been sent and will be reviewed by the editorial team.",
+    "error": "The message could not be sent. Please try again or use the direct email address.",
+    "validation": "Please complete the required fields correctly.",
+    "required": "required",
+    "requiredNote": "Fields marked * are required.",
+    "honeypot": "Leave this field empty",
+    "directEmail": "Or email us directly:",
+    "securityNote": "For your security: never share your password, one-time code or Massar Code with anyone, including this website's team.",
+    "whatTitle": "What we can help with",
+    "whatItems": ["Report outdated information", "Correct an explanation", "Report a broken link", "Suggest a guide topic", "Ask about content on this site"],
+    "cannotTitle": "What we cannot do",
+    "cannotItems": ["Access your Massar account", "Change or recover your password", "View your official grades or results", "Make administrative decisions for the Ministry"],
+    "beforeTitle": "Before you write",
+    "beforeText": "If your question concerns an official procedure, account or result, your school or the official platform is the right authority. You can also check the FAQ and related guides."
+  },
+  "searchPage": {
+    "label": "Search this website",
+    "placeholder": "Try: login, grades, Waliye…",
+    "hint": "Searches page titles, summaries and content. Press Enter to search.",
+    "noJs": "Interactive search requires JavaScript. You can browse the popular pages below or use the main menu.",
+    "popular": "Popular pages",
+    "countLabel": "Results",
+    "resultsCount": "results",
+    "noResults": "No matching results. Try fewer words or check your spelling.",
+    "loading": "Searching…",
+    "error": "The search index could not be loaded. Browse the guides from the menu or the sitemap.",
+    "helpTitle": "Did not find what you need?",
+    "helpText": "Try a shorter word such as \"results\" or \"Waliye\", or browse the sitemap to see every page.",
+    "helpLink": "Browse the FAQ"
+  },
+  "redirect": {
+    "title": "Redirecting",
+    "lead": "This page has moved. If the redirect does not start automatically, use the link below.",
+    "link": "Go to the new page"
+  },
+  "notFound": {
+    "title": "Page not found",
+    "lead": "The link may be old, or the page may have moved. Use one of the links below to continue.",
+    "home": "Back to homepage",
+    "guides": "Browse all guides",
+    "faq": "Frequently asked questions",
+    "search": "Search the website",
+    "popular": "Useful links"
+  }
+}

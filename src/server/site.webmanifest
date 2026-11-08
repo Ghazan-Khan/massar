@@ -1,0 +1,32 @@
+{
+  "name": "مسار خدمات — Massar Services",
+  "short_name": "مسار خدمات",
+  "description": "دليل مستقل لخدمات مسار التعليمية في المغرب: مسار متمدرس، مسار ولي، النقط والنتائج، تسجيل الدخول والمشاكل الشائعة.",
+  "lang": "ar",
+  "dir": "rtl",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#fffdf8",
+  "theme_color": "#0f4c46",
+  "icons": [
+    {
+      "src": "/assets/img/logo-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/assets/img/logo-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/assets/img/logo-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}

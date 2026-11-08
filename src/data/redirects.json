@@ -1,0 +1,16 @@
+[
+  { "from": "/exam-results/", "to": "/نتائج-مسار/" },
+  { "from": "/en/exam-results/", "to": "/en/massar-results/" },
+  { "from": "/نتائج-الامتحانات/", "to": "/نتائج-مسار/" },
+  { "from": "/مسار-2026/", "to": "/التقويم-المدرسي/" },
+  { "from": "/massar-problems/", "to": "/مشاكل-مسار/" },
+  { "from": "/guides/", "to": "/شروحات/" },
+  { "from": "/reset-massar-password/", "to": "/استرجاع-كلمة-المرور/" },
+  { "from": "/about-us/", "to": "/من-نحن/" },
+  { "from": "/contact-us/", "to": "/اتصل-بنا/" },
+  { "from": "/faq/", "to": "/الأسئلة-الشائعة/" },
+  { "from": "/en/الأسئلة-الشائعة/", "to": "/en/faq/" },
+  { "from": "/privacy-policy/", "to": "/سياسة-الخصوصية/" },
+  { "from": "/terms/", "to": "/شروط-الاستخدام/" },
+  { "from": "/disclaimer/", "to": "/إخلاء-المسؤولية/" }
+]

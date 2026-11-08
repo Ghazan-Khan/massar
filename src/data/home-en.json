@@ -1,0 +1,147 @@
+{
+  "hero": {
+    "eyebrow": "Independent guide to Morocco's Massar services",
+    "title": "A clear guide to Morocco's Massar education services",
+    "lead": "Practical explanations for students, parents, guardians and educators: choosing the right service, signing in, understanding grades and results, the Massar Code, and fixing common access problems — with direct links to official sources.",
+    "primary": { "label": "Start with the Massar overview", "href": "/en/massar-service/" },
+    "secondary": { "label": "Browse the FAQ", "href": "/en/faq/" },
+    "note": "Independent website. Not affiliated with Morocco's Ministry of National Education, and we never ask for your password.",
+    "panelTitle": "Start where you are",
+    "panelLead": "Choose the situation closest to yours to go straight to the right guide.",
+    "panel": [
+      { "icon": "student", "title": "I am a student", "text": "Moutamadris, grades, results and attendance", "href": "/en/massar-moutamadris/" },
+      { "icon": "parent", "title": "I am a parent", "text": "Following a child's progress through Waliye", "href": "/en/massar-waliye/" },
+      { "icon": "results", "title": "I need results", "text": "Where results appear and what delays mean", "href": "/en/massar-results/" },
+      { "icon": "key", "title": "I cannot sign in", "text": "Safe first checks for account problems", "href": "/en/massar-login/" }
+    ],
+    "officialTitle": "Need the official platform?",
+    "officialText": "Account actions and results are handled on Ministry websites.",
+    "officialLinks": [
+      { "label": "Moutamadris", "href": "https://massarservice.men.gov.ma/moutamadris/Account" },
+      { "label": "Waliye", "href": "https://massarservice.men.gov.ma/waliye/Account" }
+    ]
+  },
+  "pillars": [
+    { "icon": "book", "title": "Clear explanations", "text": "Plain language instead of administrative jargon." },
+    { "icon": "check", "title": "Practical steps", "text": "Checklists you can act on, not vague advice." },
+    { "icon": "shield", "title": "Reliable sources", "text": "Official links for time-sensitive information." },
+    { "icon": "clock", "title": "Regular review", "text": "Pages updated when procedures or links change." }
+  ],
+  "finder": {
+    "eyebrow": "Where should I start?",
+    "title": "Choose the service or problem you need",
+    "lead": "Each Massar service has a different purpose. Identifying yours first saves time and prevents login mistakes.",
+    "cards": [
+      { "icon": "student", "title": "Massar Moutamadris", "text": "The student guide to the digital space and the academic information available there.", "href": "/en/massar-moutamadris/", "cta": "Student guide" },
+      { "icon": "parent", "title": "Massar Waliye", "text": "How parents and guardians can follow grades, results, attendance and school dates.", "href": "/en/massar-waliye/", "cta": "Parent guide" },
+      { "icon": "chart", "title": "Grades and results", "text": "The difference between ongoing grades and final results, and why publishing varies.", "href": "/en/massar-grades/", "cta": "Understand grades" },
+      { "icon": "wrench", "title": "Help and troubleshooting", "text": "Login, password, account and common technical problems, explained step by step.", "href": "/en/massar-problems/", "cta": "Fix a problem" }
+    ]
+  },
+  "about": {
+    "eyebrow": "What is Massar?",
+    "title": "One digital ecosystem, several services",
+    "paras": [
+      "Massar is the digital environment connected with school education in Morocco. Schools and education administrations use it to follow a student's academic pathway and to manage information such as enrolment, grades, attendance, results and orientation.",
+      "But \"Massar\" is not a single page or a single login. Different users have different spaces: Massar Moutamadris for students, Massar Waliye for parents and guardians, and Massar Moudaris for education professionals. Choosing the right space is the first step to avoiding confusion."
+    ],
+    "points": [
+      "Moutamadris: the student space",
+      "Waliye: the parent and guardian space",
+      "Moudaris: the education professional space",
+      "Massar Code: the student's identifier"
+    ],
+    "link": { "label": "Read the full Massar overview", "href": "/en/massar-service/" },
+    "asideTitle": "A quick service map",
+    "services": [
+      { "title": "Massar Moutamadris", "text": "For students to view academic information published by their school.", "href": "/en/massar-moutamadris/" },
+      { "title": "Massar Waliye", "text": "For parents and guardians to follow their child's available school information.", "href": "/en/massar-waliye/" },
+      { "title": "Massar Moudaris", "text": "For teachers and administrative staff, according to their permissions.", "href": "/en/massar-moudaris/" },
+      { "title": "Massar Code", "text": "A personal identifier requested in some procedures. Keep it private.", "href": "/en/massar-code/" }
+    ]
+  },
+  "guides": {
+    "eyebrow": "Selected guides",
+    "title": "Begin with the guide closest to your question",
+    "lead": "Each guide answers a specific question and points you to the next useful step instead of sending you back to the start.",
+    "items": ["/en/massar-moutamadris/", "/en/massar-waliye/", "/en/massar-login/", "/en/massar-grades/", "/en/massar-results/", "/en/massar-code/"],
+    "cta": { "label": "Browse all guides", "href": "/en/guides/" }
+  },
+  "steps": {
+    "eyebrow": "When you cannot sign in",
+    "title": "Four checks before asking for help",
+    "lead": "Do not start by trying random passwords or sending your details to someone who promises to fix your account. Work through a clear sequence.",
+    "items": [
+      { "title": "Identify the service", "text": "Are you trying Massar Moutamadris, Massar Waliye or Massar Moudaris? Each uses a different account." },
+      { "title": "Check your details", "text": "Review the username and password, your keyboard language, and any accidental spaces." },
+      { "title": "Read the error", "text": "Note the exact message. It may point to wrong details, an inactive account or a temporary service issue." },
+      { "title": "Use the official channel", "text": "If the problem continues, contact your school or the relevant administration. Never share your password." }
+    ],
+    "cta": { "label": "Full Massar login guide", "href": "/en/massar-login/" }
+  },
+  "split": {
+    "eyebrow": "Grades and results",
+    "title": "Ongoing grades are not the same as final results",
+    "colA": {
+      "title": "Checking grades",
+      "text": "Grades shown during the year reflect different assessments and activities, and they may be updated in stages.",
+      "items": ["A subject grade may not appear immediately after a test", "Publishing timing is controlled by the school", "Visibility can differ between accounts"],
+      "link": { "label": "Massar grades guide", "href": "/en/massar-grades/" }
+    },
+    "colB": {
+      "title": "Understanding results",
+      "text": "Final or examination results follow a different publishing process and may be announced through specific official channels.",
+      "items": ["Not every result is available in every space", "Official results require verification at the source", "A delay does not necessarily mean your account is broken"],
+      "link": { "label": "Massar results guide", "href": "/en/massar-results/" }
+    }
+  },
+  "security": {
+    "eyebrow": "Security first",
+    "title": "Your Massar Code and password are private",
+    "text": "The Massar Code is an identifier linked to a student within the education system. It may be requested for administrative procedures, but it should never be posted publicly or sent to an unofficial website.",
+    "items": [
+      "Never share your password or one-time codes.",
+      "Check the website address before entering credentials.",
+      "Avoid unofficial Massar Code generators or recovery sites.",
+      "If in doubt, contact your school directly."
+    ],
+    "link": { "label": "Read the Massar Code guide", "href": "/en/massar-code/" }
+  },
+  "news": {
+    "eyebrow": "Editorial",
+    "title": "New guides and useful explainers",
+    "lead": "We do not publish official announcements or unconfirmed exam dates. We publish explanations that help you understand and verify education news.",
+    "items": ["/en/education-news/checking-education-news/", "/en/education-news/preparing-for-the-school-year/"],
+    "cta": { "label": "Visit education news", "href": "/en/education-news/" }
+  },
+  "trust": {
+    "eyebrow": "Transparency",
+    "title": "Why you can trust this website",
+    "lead": "We do not claim to be an official authority. Trust is built through clear labeling, cited sources and published editorial policies.",
+    "cards": [
+      { "icon": "building", "title": "Who runs the site", "text": "An independent editorial team focused on making education information easier to understand. We do not represent the Ministry or any government body." },
+      { "icon": "shield", "title": "How we verify", "text": "We refer to official sources for sensitive information and state the limits when a current authoritative source is unavailable." },
+      { "icon": "check", "title": "How we correct", "text": "We publish a corrections policy and review pages when procedures change or an error is identified." }
+    ],
+    "disclaimer": "Massar Services is an independent information website. It does not provide official account services, does not request login details, and does not guarantee an administrative outcome."
+  },
+  "faq": {
+    "title": "Frequently asked questions about Massar",
+    "lead": "Short answers, with a detailed guide for each question.",
+    "items": [
+      { "q": "Is Massar Services the official Ministry website?", "a": "No. Massar Services is an independent information website, not affiliated with Morocco's Ministry of National Education. We direct readers to official platforms when needed." },
+      { "q": "What is the difference between Moutamadris and Waliye?", "a": "Massar Moutamadris is the student space. Massar Waliye is the parent and guardian space for following available school information about their child." },
+      { "q": "Where can I find my Massar grades?", "a": "Grades are normally shown in the space linked to your account: Moutamadris for a student, or Waliye for a parent or guardian, after the school publishes them." },
+      { "q": "Why are my grades or results missing?", "a": "The school may not have published them yet, or the data may still be updating. Confirm you are in the correct account, then contact the school if the problem continues." },
+      { "q": "I forgot my password. Can you recover it?", "a": "No. We cannot access your account or change your password. Use the recovery process available on the official platform, or contact your school." },
+      { "q": "Should I share my password with someone helping me?", "a": "No. Never share your password or one-time code. Use official channels only, and remember that legitimate staff do not need your password." }
+    ],
+    "cta": { "label": "All frequently asked questions", "href": "/en/faq/" }
+  },
+  "cta": {
+    "title": "Ready to explore?",
+    "text": "Start with the Massar overview, then move to the guide that matches your situation.",
+    "primary": { "label": "Massar overview", "href": "/en/massar-service/" },
+    "secondary": { "label": "Contact the editorial team", "href": "/en/contact-us/" }
+  }
+}

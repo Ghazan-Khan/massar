@@ -1,0 +1,11 @@
+User-agent: *
+Allow: /
+Disallow: /contact.php
+Disallow: /setup-db.php
+Disallow: /admin/
+Disallow: /storage/
+Disallow: /lib/
+Disallow: /404.html
+Disallow: /en/404.html
+
+Sitemap: https://massarservices.ma/sitemap.xml
