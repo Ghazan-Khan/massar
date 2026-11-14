@@ -152,21 +152,21 @@ function Convert-Inline {
     param([AllowEmptyString()][string]$Text)
     if ([string]::IsNullOrEmpty($Text)) { return '' }
 
+    # Protect inline code spans before the other inline rules run. Use an
+    # explicit loop rather than a regex MatchEvaluator scriptblock: in
+    # PowerShell 5.1 the callback does not reliably share the local ArrayList,
+    # which previously left the literal placeholder %%CODE-1%% in the output.
     $codeStore = New-Object System.Collections.ArrayList
-    $t = [regex]::Replace($Text, '`([^`]+)`', {
-        param($m)
-        $i = $codeStore.Add($m.Groups[1].Value)
-        return "%%CODE$($i - 1)%%"
-    })
-    # Re-bind because scriptblock scoping does not always share the list.
-    if ($codeStore.Count -eq 0) {
-        $codeStore = New-Object System.Collections.ArrayList
-        $t = [regex]::Replace($Text, '`([^`]+)`', {
-            param($m)
-            $i = $codeStore.Add($m.Groups[1].Value)
-            return "%%CODE$($i - 1)%%"
-        })
+    $sb = New-Object System.Text.StringBuilder
+    $last = 0
+    foreach ($m in [regex]::Matches($Text, '`([^`]+)`')) {
+        [void]$sb.Append($Text.Substring($last, $m.Index - $last))
+        [void]$codeStore.Add($m.Groups[1].Value)
+        [void]$sb.Append('%%CODE' + ($codeStore.Count - 1) + '%%')
+        $last = $m.Index + $m.Length
     }
+    [void]$sb.Append($Text.Substring($last))
+    $t = $sb.ToString()
 
     $t = HtmlEncode $t
 
@@ -186,8 +186,10 @@ function Convert-Inline {
     $t = [regex]::Replace($t, '\*\*([^*]+)\*\*', '<strong>$1</strong>')
     $t = [regex]::Replace($t, '(?<!\*)\*([^*]+)\*(?!\*)', '<em>$1</em>')
 
-    for ($i = 0; $i -lt $codeStore.Count; $i++) {
-        $t = $t.Replace("%%CODE$i%%", '<code>' + (HtmlEncode $codeStore[$i]) + '</code>')
+    # Restore from the highest index down so %%CODE1%% cannot match inside
+    # %%CODE10%% and leave a broken placeholder behind.
+    for ($i = $codeStore.Count - 1; $i -ge 0; $i--) {
+        $t = $t.Replace('%%CODE' + $i + '%%', '<code>' + (HtmlEncode $codeStore[$i]) + '</code>')
     }
     return $t
 }

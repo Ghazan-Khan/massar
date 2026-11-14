@@ -86,6 +86,7 @@ foreach ($file in $htmlFiles) {
     $html = [IO.File]::ReadAllText($path, [Text.Encoding]::UTF8)
     $is404 = ($file.Name -eq '404.html')
     $isRedirect = ($html -match 'http-equiv="refresh"')
+    if ($html -match '%%CODE[^%]*%%') { Add-Error ($urlPath + ': unresolved inline code placeholder') }
 
     if ($html -notmatch '<!DOCTYPE html>') { Add-Error ($urlPath + ': missing doctype') }
     if ($html -match '<html lang="([^"]*)" dir="([^"]*)">') {
@@ -237,6 +238,9 @@ if (Test-Path -LiteralPath $robotsPath) {
 $indexPath = Join-Path $dist 'search-index.json'
 if (Test-Path -LiteralPath $indexPath) {
     $index = Read-JsonSafe $indexPath
+    if ([IO.File]::ReadAllText($indexPath, [Text.Encoding]::UTF8) -match '%%CODE[^%]*%%') {
+        Add-Error 'search-index.json contains an unresolved inline code placeholder'
+    }
     if (@($index).Count -lt 50) { Add-Error ('search index too small: ' + @($index).Count) }
     foreach ($item in @($index)) {
         if (-not $item.u -or -not $item.t -or -not $item.s -or -not $item.l) { Add-Error 'search index item missing fields' }

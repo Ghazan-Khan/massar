@@ -1,11 +1,11 @@
 # Massar Services - local preview server
 # Pure ASCII. Requires Windows PowerShell 5.1+.
-# Usage: powershell -ExecutionPolicy Bypass -File scripts/serve.ps1 [-Port 8080]
+# Usage: powershell -ExecutionPolicy Bypass -File scripts/serve.ps1 [-Port 8099]
 # Serves dist/ on http://localhost:PORT/ using a minimal HTTP/1.1 server
 # (TcpListener avoids the HttpListener URL ACL requirement).
 
 param(
-    [int]$Port = 8080,
+    [int]$Port = 8099,
     [string]$Root
 )
 
