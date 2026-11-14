@@ -14,10 +14,11 @@ Requirements: Windows PowerShell 5.1 (included with Windows 10/11) and nothing e
 An optional `package.json` aliases the same commands as `npm run build`, `npm run check` and `npm run serve`. It declares no dependencies; npm is not required and nothing is installed from the registry.
 
 ```powershell
-# Generate the site into dist\
-powershell -NoProfile -ExecutionPolicy Bypass -File scripts\build.ps1
+# Generate the site into dist\ (and run it from any platform)
+npm run build
 
-# Run the automated QA checks (links, canonical, hreflang, JSON-LD, sitemap, ...)
+# Windows-only shortcuts for the same scripts
+powershell -NoProfile -ExecutionPolicy Bypass -File scripts\build.ps1
 powershell -NoProfile -ExecutionPolicy Bypass -File scripts\check.ps1
 
 # Preview locally at http://localhost:8099/
@@ -25,6 +26,8 @@ powershell -NoProfile -ExecutionPolicy Bypass -File scripts\serve.ps1
 ```
 
 `build.ps1` and `check.ps1` must be run from the project root. `check.ps1` exits with code 1 when it finds an error, so it can gate a deployment.
+
+`npm run build` is cross-platform. On Windows it runs `scripts/build.ps1` and regenerates `dist/`. On Linux/macOS (including Hostinger's build container) PowerShell is unavailable, so it validates the committed `dist/` artifact instead. Keep `dist/` committed after every content change: the static deploy uses exactly that directory.
 
 ## Project structure
 
@@ -119,6 +122,38 @@ After any edit:
 powershell -NoProfile -ExecutionPolicy Bypass -File scripts\build.ps1
 powershell -NoProfile -ExecutionPolicy Bypass -File scripts\check.ps1
 ```
+
+## Deploying to Hostinger (Git)
+
+The repository builds without npm dependencies on any platform, so it can be
+deployed with Hostinger's GitHub integration or with **Advanced → Git**.
+
+Use these build settings:
+
+| Setting | Value |
+|---|---|
+| Application type / Framework | Other |
+| Branch | main |
+| Build command | `npm run build` |
+| Output directory | `dist` |
+| Entry file | *(leave empty)* |
+| Node.js version | 18 or newer (22 is fine) |
+
+The output directory is the important part. Hostinger cannot auto-detect it for
+a custom static site, and an empty value publishes nothing. Set it to `dist` in
+the deploy settings before starting the build.
+
+`npm install` is a no-op (the project has no dependencies). On the Linux build
+container, `npm run build` verifies that the committed `dist/` exists and exits
+successfully; the generated site is not rebuilt on the server because the
+generator is Windows PowerShell. Always run `npm run build` (or
+`scripts/build.ps1`) on Windows and commit `dist/` after changing content or
+templates.
+
+The deployment target is Apache with PHP (see
+[`docs/06-deployment-rollback.md`](docs/06-deployment-rollback.md)). After the
+first deploy, run `setup-db.php` on the server and confirm that PHP executes and
+that `storage/` is writable and not reachable over HTTP.
 
 ## Before going live
 
